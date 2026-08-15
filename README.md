@@ -201,42 +201,6 @@ FROM employees e
 JOIN departments d
     ON e.department_id = d.department_id;
 
- 🔗 Table Relationships
-
-The database follows a relational structure:
-                ┌─────────────────┐
-                │   departments   │
-                ├─────────────────┤
-                │ department_id   │
-                │ department_name │
-                └────────┬────────┘
-                         │
-                         │ department_id
-                         │
-                ┌────────▼────────┐
-                │    employees    │
-                ├─────────────────┤
-                │ employee_id     │
-                │ employee_name   │
-                │ gender          │
-                │ age             │
-                │ hire_date       │
-                │ designation     │
-                │ department_id   │
-                │ location_id     │
-                │ salary          │
-                └────────┬────────┘
-                         │
-                         │ location_id
-                         │
-                ┌────────▼────────┐
-                │     location    │
-                ├─────────────────┤
-                │ location_id     │
-                │ location_name   │
-                └─────────────────┘
-
-
 📁 Project Structure
 
 Employee-Database-SQL/
